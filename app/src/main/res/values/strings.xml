@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Health Talk</string>
+    <string name="ainda_n_o_tem_cadastro_cadastre_agora">Ainda não tem cadastro? Cadastre agora!</string>
+    <string name="n_o_tem_cadastro_cadastre_se_agora">Não tem cadastro? Cadastre-se agora!</string>
+    <string name="bntcadastrar_se">Cadastrar-se</string>
+    <string name="bntLogin">Login</string>
+    <string name="todo">TODO</string>
+    <string name="entrar">Entrar</string>
+    <string name="cpf">CPF</string>
+    <string name="senha">Senha</string>
+    <string name="esqueceu_sua_senha">Esqueceu sua senha?</string>
+</resources>
