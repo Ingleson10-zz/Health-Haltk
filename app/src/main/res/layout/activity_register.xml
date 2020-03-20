@@ -7,4 +7,240 @@
     android:background="@color/backgroundSplash"
     tools:context=".activity.RegisterActivity">
 
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/nome_completo"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/rg"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <EditText
+        android:id="@+id/txtCPF"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/cpf"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/txtDatadeNascimento"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_date_range_black_24dp"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/data_de_nascimento"
+        android:inputType="date"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCPF" />
+
+    <EditText
+        android:id="@+id/txtTelefoneResidencial"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/telefone_residencial"
+        android:inputType="phone"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatadeNascimento" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_phone_android_black_24dp"
+        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/telefone_celular"
+        android:inputType="phone"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefoneResidencial" />
+
+    <EditText
+        android:id="@+id/txtCEP"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_home_black_24dp"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/cep"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCelular" />
+
+    <Button
+        android:id="@+id/BntCancelar"
+
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/cancelar"
+        android:textColor="#2C9486"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BntCadastrar"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <Button
+        android:id="@+id/BntCadastrar"
+
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/cadastrar"
+        android:textColor="#2C9486"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtEndereco"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:drawableStart="@drawable/ic_home_black_24dp"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/endere_o"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCEP" />
+
+    <EditText
+        android:id="@+id/txtNº"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/n"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toEndOf="@+id/txtEndereco"
+        app:layout_constraintTop_toBottomOf="@+id/txtCEP" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/cidade"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEndereco" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="@string/estado"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/backgroundSplash"
+        app:layout_constraintStart_toEndOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/txtEndereco" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
